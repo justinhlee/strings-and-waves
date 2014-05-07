@@ -27,6 +27,7 @@ function lineLength(x1,y1,x2,y2) {
 }
 
 function noteName (pitch) {
+
     switch (pitch) {
         case 110.0:
             return 'A2';
@@ -278,7 +279,7 @@ Sketch.create({
             this.font = '12px Quantico';
             var freq = 900/(2*lineLength(startX, startY, this.mouse.x, this.mouse.y));
             var ptch = Math.round(freq*200*10)/10;
-            var note = noteName(ptch);
+           
             this.fillText(ptch + ' Hz ' + noteName(ptch), this.mouse.x + 10, this.mouse.y);
             this.fillStyle = '#FFFCC4';
         }
