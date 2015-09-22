@@ -273,7 +273,8 @@ Sketch.create({
             this.moveTo(startX, startY);
             
             this.lineTo( this.mouse.x, this.mouse.y );
-            this.strokeStyle = '#FFFCC4';
+            // this.strokeStyle = '#FFFCC4';
+            this.strokeStyle = 'white';
             this.lineWidth = 2;
             this.stroke();
             this.font = '12px Quantico';
@@ -281,7 +282,8 @@ Sketch.create({
             var ptch = Math.round(freq*200*10)/10;
            
             this.fillText(ptch + ' Hz ' + noteName(ptch), this.mouse.x + 10, this.mouse.y);
-            this.fillStyle = '#FFFCC4';
+            // this.fillStyle = '#FFFCC4';
+            this.fillStyle = 'white';
         }
         seconds = seconds + 0.007;
 
